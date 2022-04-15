@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "970703285746",
+    "project_id": "center-nokhba",
+    "storage_bucket": "center-nokhba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:970703285746:android:32ff6cf7e3486afb8a8f6b",
+        "android_client_info": {
+          "package_name": "com.nokhba.center.panel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "970703285746-kseji1gsc5jjs2vlmnb4ip5n5l2tfank.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBky8uIVRAGr2QLQ4rbQoKQDVb6D_KCJ-g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "970703285746-kseji1gsc5jjs2vlmnb4ip5n5l2tfank.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
