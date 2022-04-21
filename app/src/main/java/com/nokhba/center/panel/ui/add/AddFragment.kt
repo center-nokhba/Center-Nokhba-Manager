@@ -1,10 +1,9 @@
-package com.nokhba.center.panel.ui.notifications
+package com.nokhba.center.panel.ui.add
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.nokhba.center.panel.databinding.FragmentAddBinding

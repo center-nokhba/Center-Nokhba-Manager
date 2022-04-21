@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Halem/StudioProjects/Center-Nokhba-Manager/app/src/main/res/drawable/circle_shape_paid.xml" value="0.203" />
+        <entry key="..\:/Users/Halem/StudioProjects/Center-Nokhba-Manager/app/src/main/res/drawable/circle_shape_unpaid.xml" value="0.203" />
+        <entry key="..\:/Users/Halem/StudioProjects/Center-Nokhba-Manager/app/src/main/res/layout/fragment_dashboard.xml" value="0.1" />
+        <entry key="..\:/Users/Halem/StudioProjects/Center-Nokhba-Manager/app/src/main/res/layout/subscriber.xml" value="0.6" />
         <entry key="..\:/Users/Halim/AndroidStudioProjects/CenterNokhbaManager/app/src/main/res/drawable/ic_logo.xml" value="0.229" />
         <entry key="..\:/Users/Halim/AndroidStudioProjects/CenterNokhbaManager/app/src/main/res/layout/activity_main.xml" value="0.1453804347826087" />
         <entry key="..\:/Users/Halim/AndroidStudioProjects/CenterNokhbaManager/app/src/main/res/layout/fragment_add.xml" value="0.25" />
