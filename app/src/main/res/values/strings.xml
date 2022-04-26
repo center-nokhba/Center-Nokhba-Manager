@@ -2,14 +2,69 @@
     <string name="app_name">Center Nokhba Manager</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_services">Formation</string>
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
     <string name="icn">ICN</string>
     <string name="mobile_number">Mobile Number</string>
-    <string name="formation_dropdown">Formation</string>
-    <string name="paid_switch">Paid</string>
-    <string name="add_subscriber">Add</string>
+    <string name="services_dropdown">Service</string>
+    <string name="paid_switch">Paid?</string>
+    <string name="add_participant">Add</string>
     <string name="birthday">Birthday</string>
     <string name="address">Address</string>
+    <string name="add_formation">Add Formation</string>
+    <string name="title_participants">Participants</string>
+    <string name="title_add_formation">Add Formation</string>
+    <string name="title_add_services">Add Service</string>
+    <string name="title_add_participants">Add Participant</string>
+    <string name="hint_genre">Genre</string>
+    <string name="title_submit">Submit</string>
+    <string name="student_switch">Student?</string>
+    <string name="hint_branch">Branch</string>
+    <string name="hint_city">City</string>
+    <string name="hint_school">School</string>
+    <string name="groups_dropdown">Groups</string>
+    <string name="title_visitors">Visitors</string>
+    <string name="title_paid">Paid</string>
+    <string name="title_earning">Earning</string>
+    <string name="title_add_class">Add Class</string>
+    <string name="title_add_student">Add Student</string>
+    <string name="hint_registration_date">Registration Date</string>
+
+    <string-array name="genre">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="services">
+        <item>Classes</item>
+        <item>Office</item>
+        <item>Band Aid</item>
+        <item>Excel 1 moi</item>
+        <item>Ecommerce</item>
+        <item>Android</item>
+    </string-array>
+
+    <string-array name="cities">
+        <item>Agadir</item>
+        <item>Dcheira</item>
+        <item>Ljihadya</item>
+        <item>Inzegan</item>
+        <item>Ait Melloul</item>
+        <item>Azrou</item>
+    </string-array>
+
+    <string-array name="groups">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+    </string-array>
+
 </resources>

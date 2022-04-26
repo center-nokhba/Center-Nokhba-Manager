@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.participants.add.AddParticipant">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/first_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/first_name_field"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="@string/first_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageFilterView"
+            app:startIconDrawable="@drawable/fi_rr_user">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="flagNavigateNext"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/last_name_field"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_weight="1"
+            android:hint="@string/last_name"
+            app:layout_constraintEnd_toEndOf="@+id/first_name_field"
+            app:layout_constraintStart_toStartOf="@+id/first_name_field"
+            app:layout_constraintTop_toBottomOf="@+id/first_name_field">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="flagNavigateNext|flagNavigatePrevious"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/address_field"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="@string/address"
+        app:layout_constraintEnd_toEndOf="@+id/first_last_name"
+        app:layout_constraintStart_toStartOf="@+id/first_last_name"
+        app:layout_constraintTop_toBottomOf="@+id/first_last_name"
+        app:startIconDrawable="@drawable/fi_rr_home_location">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="flagNavigateNext|flagNavigatePrevious"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/birthday_field"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="@string/birthday"
+        app:layout_constraintEnd_toEndOf="@+id/address_field"
+        app:layout_constraintStart_toStartOf="@+id/address_field"
+        app:layout_constraintTop_toBottomOf="@+id/address_field"
+        app:startIconDrawable="@drawable/fi_rr_cake_birthday">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="flagNavigateNext|flagNavigatePrevious"
+            android:inputType="date" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/birthday_field">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/icn_field"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="@string/icn"
+            app:startIconDrawable="@drawable/fi_rr_id_badge">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:imeOptions="flagNavigateNext|flagNavigatePrevious"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/mobile_number_field"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/mobile_number"
+            app:layout_constraintBottom_toBottomOf="@+id/icn_field"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/icn_field"
+            app:layout_constraintTop_toTopOf="@+id/icn_field"
+            app:startIconDrawable="@drawable/fi_rr_smartphone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="flagNavigateNext|flagNavigatePrevious"
+                android:inputType="date" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/dropdown_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayoutCompat"
+        app:layout_constraintStart_toStartOf="@+id/linearLayoutCompat"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cities_dropdown"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:hint="@string/hint_city"
+            app:startIconDrawable="@drawable/fi_rr_map_marker">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="flagNavigateNext|flagNavigatePrevious"
+                android:inputType="textAutoComplete" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/genre_dropdown"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:hint="@string/hint_genre"
+            app:startIconDrawable="@drawable/fi_rr_genre">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="flagNavigateNext|flagNavigatePrevious"
+                android:inputType="textAutoComplete" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/formation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/dropdown_menu"
+        app:layout_constraintStart_toStartOf="@+id/dropdown_menu"
+        app:layout_constraintTop_toBottomOf="@+id/dropdown_menu">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/service_dropdown"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:hint="@string/services_dropdown"
+            app:startIconDrawable="@drawable/fi_rr_layers">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="flagNavigateNext|flagNavigatePrevious"
+                android:inputType="textAutoComplete" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/group_dropdown"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="2"
+            android:hint="@string/groups_dropdown"
+            app:startIconDrawable="@drawable/fi_rr_text_group">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="flagNavigateNext|flagNavigatePrevious"
+                android:inputType="textAutoComplete" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/switches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/formation"
+        app:layout_constraintStart_toStartOf="@+id/formation"
+        app:layout_constraintTop_toBottomOf="@+id/formation">
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/paid_switch"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/fi_rr_money"
+            android:drawablePadding="8dp"
+            android:hint="@string/paid_switch" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/student_switch"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:hint="@string/student_switch" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/branch_dropdown"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/hint_branch"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/switches"
+        app:layout_constraintStart_toStartOf="@+id/switches"
+        app:layout_constraintTop_toBottomOf="@+id/switches"
+        app:startIconDrawable="@drawable/fi_rr_graduation_cap">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="flagNavigateNext|flagNavigatePrevious"
+            android:inputType="textAutoComplete" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/school_dropdown"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/hint_school"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/branch_dropdown"
+        app:layout_constraintStart_toStartOf="@+id/branch_dropdown"
+        app:layout_constraintTop_toBottomOf="@+id/branch_dropdown"
+        app:startIconDrawable="@drawable/fi_rr_school">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="flagNavigatePrevious|actionDone"
+            android:inputType="textAutoComplete" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

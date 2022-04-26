@@ -7,7 +7,7 @@
 
         <variable
             name="subscriber"
-            type="com.nokhba.center.panel.model.Subscriber" />
+            type="com.nokhba.center.panel.model.Participant" />
 
         <variable
             name="viewModel"
@@ -19,14 +19,130 @@
         android:layout_height="match_parent"
         tools:context=".ui.dashboard.DashboardFragment">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_subscribers"
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView"
             android:layout_width="0dp"
-            android:layout_height="0dp"
-
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="160dp"
+            android:layout_margin="4dp"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:drawablePadding="8dp"
+                        android:gravity="center"
+                        android:text="@string/title_visitors"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:drawableTint="@color/md_white_1000"
+                        app:drawableTopCompat="@drawable/fi_rr_user" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:drawablePadding="8dp"
+                        android:gravity="center"
+                        android:text="24"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:drawableTint="@color/md_white_1000" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:drawablePadding="8dp"
+                        android:gravity="center"
+                        android:text="@string/title_paid"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:drawableTint="@color/md_white_1000"
+                        app:drawableTopCompat="@drawable/fi_rr_money" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:drawablePadding="8dp"
+                        android:gravity="center"
+                        android:text="14"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:drawableTint="@color/md_white_1000" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:drawablePadding="8dp"
+                        android:gravity="center"
+                        android:text="@string/title_earning"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:drawableTint="@color/md_white_1000"
+                        app:drawableTopCompat="@drawable/fi_rr_dollar" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:drawablePadding="8dp"
+                        android:gravity="center"
+                        android:text="2400"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:drawableTint="@color/md_white_1000" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </com.google.android.material.card.MaterialCardView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -56,7 +56,7 @@
             android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/circle_shape_unpaid" />
+            tools:srcCompat="@drawable/circle_shape_unpaid" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>

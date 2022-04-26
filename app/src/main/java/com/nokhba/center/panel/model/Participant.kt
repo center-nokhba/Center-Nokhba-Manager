@@ -5,7 +5,7 @@ import com.google.firebase.firestore.PropertyName
 import com.google.firebase.firestore.ServerTimestamp
 import java.util.*
 
-data class Subscriber constructor(
+data class Participant constructor(
 
     @JvmField
     @PropertyName("user_info")
@@ -17,12 +17,7 @@ data class Subscriber constructor(
 
     @JvmField
     @PropertyName("center_info")
-    val centerInfo: CenterInfo = CenterInfo(),
-
-    @JvmField
-    @ServerTimestamp
-    @PropertyName("registration_date")
-    var registrationDate: Timestamp? = null
+    val centerInfo: CenterInfo = CenterInfo()
 )
 
 data class Name(
@@ -32,7 +27,7 @@ data class Name(
 
 data class UserInfo(
     val name: Name = Name(),
-    var birth: Date = Date(),
+    var birth: String? = null,
     var address: String? = null,
 
     @JvmField
@@ -41,16 +36,18 @@ data class UserInfo(
 
     var icn: String? = null,
     var genre: String? = null,
+    var city: String? = null
 )
 
 data class StudyInfo(
     val isStudent: Boolean = false,
-    val division: String? = null
+    val school: String? = null,
+    val branch: String? = null
 )
 
 data class CenterInfo(
 
-    val formation: List<Formation?>? = null,
+    val formation: List<Service?>? = null,
 
     @JvmField
     @ServerTimestamp
@@ -58,7 +55,7 @@ data class CenterInfo(
     var firstRegistration: Timestamp? = null
 )
 
-data class Formation(
+data class Service(
 
     val name: String? = null,
     val paid: Boolean = false,
@@ -67,6 +64,6 @@ data class Formation(
     @JvmField
     @ServerTimestamp
     @PropertyName("registration_date")
-    var registrationDate: Timestamp? = null
+    var registrationDate: String? = null
 )
 
